@@ -1,2 +1,2 @@
-import { cli } from "../src/src/games/cli";
-cli()
+import { cli } from "../src/src/games/cli.js";
+cli();

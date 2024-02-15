@@ -2,32 +2,32 @@ import { importName } from "./cli.js";
 import { askQuestion, isCorrect, congratulation, primeOrNot, tryAgain, evenQuest} from '../index.js';
 
 const isPrimeNumber = () => {
-    let randomPrime = Math.floor(Math.random() * 100 + 1)
-    primeOrNot()
-    evenQuest(randomPrime)
-    let answer = askQuestion()
+    let randomPrime = Math.floor(Math.random() * 100 + 1);
+    primeOrNot();
+    evenQuest(randomPrime);
+    let answer = askQuestion();
     if (answer == isPrime(randomPrime)){
-        isCorrect()
-        congratulation()
+        isCorrect();
+        congratulation();
     }else {
-        console.log(`answer ${answer} is not correct, "${isPrime(randomPrime)}" was correct`)
-        tryAgain()
+        console.log(`answer ${answer} is not correct, "${isPrime(randomPrime)}" was correct`);
+        tryAgain();
     }
 }
 
 const isPrime = (number) => {
-    let massive = []
+    let massive = [];
     for (let x = 2; x < number; x += 1){
         if (number % x == 0){
-            massive.push(x)
+            massive.push(x);
         }
     }
     if (massive.length == 0){
-        return 'yes'
+        return 'yes';
     }  else{
-        return 'no'
+        return 'no';
     }
 }
 
 
-export default isPrimeNumber
+export default isPrimeNumber;

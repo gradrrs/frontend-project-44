@@ -15,7 +15,7 @@ const calculate = () => {
         3 : '*'
     }
     let count = 0;
-    resultCalc()
+    resultCalc();
     for (let x = 0; x < 3; x += 1){
         let number1 = generateRandomNumber();
         let number2 = generateRandomNumber();
@@ -28,22 +28,22 @@ const calculate = () => {
             result = number1 - number2;
             calcOperator(massive[operator], number1, number2)
         }else {
-            result = number1 * number2
+            result = number1 * number2;
             let umn = '*'
-            calcOperator(umn, number1, number2)
+            calcOperator(umn, number1, number2);
         }
-    let calculation = askQuestion()
+    let calculation = askQuestion();
     if (calculation == result){
         count += 1;
-        isCorrect()
+        isCorrect();
     } else {
         wrongAnswerGcd(calculation, result);
-        tryAgain()
+        tryAgain();
         break
     }
     }
     if (count == 3){
-        congratulation()
+        congratulation();
     
     }
 }

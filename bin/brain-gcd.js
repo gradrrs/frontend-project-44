@@ -1,3 +1,5 @@
 #!/usr/bin/env node
+import { cli } from "../src/src/games/cli.js";
 import nod from "../src/src/games/brain-even.js";
-nod()
+cli()
+nod();
