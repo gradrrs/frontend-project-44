@@ -23,13 +23,13 @@ const calculate = () => {
         let operator = getRandomInt();
         if (massive[operator] == '+'){
             result = number1 + number2;
-            calcOperator(massive[operator], number1, number2)
+            calcOperator(massive[operator], number1, number2);
         }else if (massive[operator] == '-'){
             result = number1 - number2;
-            calcOperator(massive[operator], number1, number2)
+            calcOperator(massive[operator], number1, number2);
         }else {
             result = number1 * number2;
-            let umn = '*'
+            let umn = '*';
             calcOperator(umn, number1, number2);
         }
     let calculation = askQuestion();
