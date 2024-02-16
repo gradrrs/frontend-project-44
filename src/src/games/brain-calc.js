@@ -10,9 +10,9 @@ const generateRandomNumber = () => Math.floor(Math.random() * (100 - 1 + 1)) + 1
 
 const calculate = () => {
     let massive = {
-        1 : '+',
-        2 : '-',
-        3 : '*'
+        0 : '+',
+        1 : '-',
+        2 : '*'
     }
     let count = 0;
     resultCalc();
