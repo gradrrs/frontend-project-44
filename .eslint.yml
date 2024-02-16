@@ -1,11 +1,13 @@
 env:
   node: true
+  es2021: true
 
  extends:
-   - eslint:recommended
+   parseOptions
 
  parserOptions:
-   ecmaVersion: 2021
+   ecmaVersion: latest
+  sourseType: module
 
  rules:
    no-console: off
