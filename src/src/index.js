@@ -34,7 +34,7 @@ const progressionOrNot = () => {
 }
 
 const tryAgain = () => {
-    console.log(`Lets try again, ${importName}!`);
+    console.log(`Let's try again, ${importName}!`);
 }
 
 const gameOver = () => {
