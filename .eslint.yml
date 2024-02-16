@@ -1,23 +1,17 @@
 env:
-
+  node: true
   es2021: true
 
-  node: true
+ extends: airnbnb-base
 
-extends: airbnb-base
+ parserOptions:
+   ecmaVersion: latest
+  sourseType: module
 
-parserOptions:
+ rules:
+   no-console: off
+   import/extensions: off
 
-  ecmaVersion: latest
-
-  sourceType: module
-
-rules: {
-
-  no-console: off,
-
-  import/extensions: 
-  -error
-  -ignorePackages
-  -js: always
-}
+ignorePatterns: 
+  -games
+  -bin
