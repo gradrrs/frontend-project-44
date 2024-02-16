@@ -3,7 +3,7 @@ import { brainFalseAnswer, congratulation, askQuestion, isCorrect, calcOperator,
 
 const getRandomInt = () => {
     return Math.floor(Math.random() * 3);
-  }
+}
 
 const generateRandomNumber = () => Math.floor(Math.random() * (100 - 1 + 1)) + 1;
 
