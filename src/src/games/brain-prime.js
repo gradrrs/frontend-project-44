@@ -2,6 +2,7 @@ import { importName } from "./cli.js";
 import { askQuestion, isCorrect, congratulation, primeOrNot, tryAgain, evenQuest} from '../index.js';
 
 const isPrimeNumber = () => {
+    for (let x = 0; x < 1; x += 1){
     let randomPrime = Math.floor(Math.random() * 100 + 1);
     primeOrNot();
     evenQuest(randomPrime);
@@ -11,9 +12,10 @@ const isPrimeNumber = () => {
         congratulation();
     }else {
         tryAgain();
+        break
     }
 }
-
+}
 const isPrime = (number) => {
     let massive = [];
     for (let x = 2; x < number; x += 1){
