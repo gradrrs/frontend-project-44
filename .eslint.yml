@@ -12,6 +12,4 @@ env:
    no-console: off
    import/extensions: off
 
-ignorePatterns: 
-  -games
-  -bin
+/*eslint linebreak-style: ["error", "windows"]*/
