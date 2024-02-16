@@ -54,7 +54,7 @@ const wrongAnswerGcd = (user_input, target) => {
 }
 
 const gcdNumber = (x1, x2) => {
-    console.log(`${x1} ${x2}`);
+    console.log(`Question: ${x1} ${x2}`);
 }
 
 const calcOperator = (operator, x1, x2) => {
