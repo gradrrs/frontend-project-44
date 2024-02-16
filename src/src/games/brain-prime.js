@@ -10,7 +10,6 @@ const isPrimeNumber = () => {
         isCorrect();
         congratulation();
     }else {
-        console.log(`answer ${answer} is not correct, "${isPrime(randomPrime)}" was correct`);
         tryAgain();
     }
 }

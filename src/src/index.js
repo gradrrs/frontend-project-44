@@ -49,6 +49,8 @@ const evenQuest = (x) => {
     console.log(`Question: ${x}`);
 }
 
+
+
 const wrongAnswerGcd = (user_input, target) => {
     console.log(`${user_input} is wrong answer ;(. Correct answer was  ${target}.`);
 }
