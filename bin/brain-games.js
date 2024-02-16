@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-import cli from "cli.js";
+import { cli } from "../src/src/games/cli.js";
 cli();
