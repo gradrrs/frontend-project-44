@@ -11,5 +11,12 @@ env:
  rules:
    no-console: off
    import/extensions: off
+  semi: off
+  indent: off
+  eqeqeq: off
+  prefer-const: off
+  keyword-spacing: off
+  space-before-blocks: off
+  linebreak-style: off
 
 
