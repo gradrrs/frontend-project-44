@@ -32,7 +32,7 @@ const calculate = () => {
       calcOperator(umn, number1, number2);
     }
     const calculation = askQuestion();
-    if (calculation === result) {
+    if (Math.abs(calculation) === Math.abs(result)) {
       count += 1;
       isCorrect();
     } else {
