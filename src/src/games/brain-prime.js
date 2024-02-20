@@ -22,7 +22,7 @@ const isPrimeNumber = () => {
     primeOrNot();
     evenQuest(randomPrime);
     const answer = askQuestion();
-    if (answer === isPrime(randomPrime)) {
+    if (Math.abs(answer) === Math.abs(Prime(randomPrime))) {
       isCorrect();
       count += 1;
     } else {

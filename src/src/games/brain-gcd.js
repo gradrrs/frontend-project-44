@@ -16,7 +16,7 @@ const nod = () => {
     }
     gcdNumber(x1, x2);
     const UserInput = askQuestion();
-    if (UserInput === target) {
+    if (Math.abs(UserInput) === Math.abs(target)) {
       isCorrect();
       track += 1;
     } else {

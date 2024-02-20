@@ -22,7 +22,7 @@ const progressionNumber = () => {
     }
     evenQuest(massive.join(' '));
     const answer = askQuestion();
-    if (QuestNumber === answer) {
+    if (Math.abs(QuestNumber) === Math.abs(answer)) {
       isCorrect();
       count += 1;
     } else {
