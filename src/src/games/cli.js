@@ -6,6 +6,6 @@ const cli = () => {
   console.log('Welcome to the Brain Games!');
   importName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${importName}`);
-}
+};
 
-export {importName, cli};
+export { importName, cli };
