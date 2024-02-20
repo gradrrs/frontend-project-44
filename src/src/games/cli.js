@@ -1,10 +1,11 @@
 import readlineSync from 'readline-sync';
 
-let importName;
+const importName = '';
 
 const cli = () => {
   console.log('Welcome to the Brain Games!');
-  importName = readlineSync.question('May I have your name? ');
+  const name = readlineSync.question('May I have your name? ');
+  importName = name;
   console.log(`Hello, ${importName}`);
 };
 
