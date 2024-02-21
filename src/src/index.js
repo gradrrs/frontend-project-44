@@ -27,7 +27,7 @@ const tryAgain = () => {
 };
 
 const brainFalseAnswer = (calculation, result) => {
-  console.log(`${calculation}' is wrong answer ;(. Correct answer was '${result}'.`);
+  console.log(`'${calculation}' is wrong answer ;(. Correct answer was '${result}'.`);
 };
 
 const evenQuest = (x) => {
