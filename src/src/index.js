@@ -37,5 +37,5 @@ const answerQuest = (x) => {
 export {
   isCorrect, askQuestion, congratulation,
   answerQuest, welcome,
-  brainFalseAnswer, tryAgain, questionGame
+  brainFalseAnswer, tryAgain, questionGame,
 };
