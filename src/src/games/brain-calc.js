@@ -26,7 +26,7 @@ const calculate = () => {
       evenQuest(str);
     } else if (massive[operator] === '-') {
       result = number1 - number2;
-      const str = ` ${number1} ${massive[operator]} ${number2}`;
+      const str = `${number1} ${massive[operator]} ${number2}`;
       evenQuest(str);
     } else {
       result = number1 * number2;
