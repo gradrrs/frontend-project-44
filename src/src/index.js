@@ -23,7 +23,7 @@ export const questionGame = (question) => {
 };
 
 const tryAgain = () => {
-  console.log(`Let's try again ${importName}!`);
+  console.log(`Let's try again, ${importName}!`);
 };
 
 const brainFalseAnswer = (calculation, result) => {
