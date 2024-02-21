@@ -1,7 +1,5 @@
 import readlineSync from 'readline-sync';
 
-// import { importName } from '../../bin/cli.js';
-
 const askQuestion = () => readlineSync.question('Your answer: ');
 
 let importName;

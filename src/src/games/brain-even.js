@@ -1,32 +1,28 @@
 import {
-  askQuestion, isCorrect, congratulation, questionGame, tryAgain, evenQuest,
+  askQuestion, isCorrect, congratulation, questionGame, tryAgain, evenQuest, welcome,
 } from '../index.js';
-import { cli } from './cli.js';
-//import { importName } from '../../../bin/cli.js';
 
 const question = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = () => {
-  cli();
+  welcome();
   let count = 0;
   questionGame(question);
   for (let i = 0; i < 3; i += 1) {
     const x = String(Math.random())[2];
     evenQuest(x);
-    console.log(x)
+    console.log(x);
     const input = askQuestion();
     if ((x % 2 === 0 && input === 'yes') || (x % 2 !== 0 && input === 'no')) {
       isCorrect();
       count += 1;
     } else {
-      
       tryAgain();
       break;
     }
   }
-    if (count === 3) {
-      congratulation();
-    }
-  
+  if (count === 3) {
+    congratulation();
+  }
 };
 export default isEven;
