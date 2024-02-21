@@ -1,9 +1,13 @@
 import {
-  askQuestion, congratulation, evenQuest, isCorrect, progressionOrNot, tryAgain, wrongAnswerGcd,
+  askQuestion, congratulation, evenQuest, isCorrect, tryAgain,
+  welcome, questionGame, brainFalseAnswer,
 } from '../index.js';
 
+const question = 'What number is missing in the progression?';
+welcome();
+
 const progressionNumber = () => {
-  progressionOrNot();
+  questionGame(question);
   let count = 0;
   for (let i = 0; i < 3; i += 1) {
     const step = Math.floor(Math.random() * 10 + 1);
@@ -26,7 +30,7 @@ const progressionNumber = () => {
       isCorrect();
       count += 1;
     } else {
-      wrongAnswerGcd(answer, QuestNumber);
+      brainFalseAnswer(answer, QuestNumber);
       tryAgain();
       break;
     }

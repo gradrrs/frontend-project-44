@@ -1,9 +1,12 @@
 import {
-  askQuestion, isCorrect, congratulation, WhatGcd, tryAgain, wrongAnswerGcd, gcdNumber,
+  askQuestion, isCorrect, congratulation, tryAgain,
+  questionGame, welcome, brainFalseAnswer, evenQuest,
 } from '../index.js';
 
+welcome();
+const question = 'Find the greatest common divisor of given numbers.';
 const nod = () => {
-  WhatGcd();
+  questionGame(question);
   let track = 0;
   for (let x = 0; x < 3; x += 1) {
     const x1 = Math.floor(Math.random() * 100 + 1);
@@ -14,13 +17,14 @@ const nod = () => {
         target = count;
       }
     }
-    gcdNumber(x1, x2);
+    const str = `${x1} ${x2}`;
+    evenQuest(str);
     const UserInput = askQuestion();
     if (Math.abs(UserInput) === Math.abs(target)) {
       isCorrect();
       track += 1;
     } else {
-      wrongAnswerGcd(UserInput, target);
+      brainFalseAnswer(UserInput, target);
       tryAgain();
       break;
     }
