@@ -1,6 +1,6 @@
 import {
   askQuestion, isCorrect, congratulation, tryAgain,
-  evenQuest, welcome, questionGame, brainFalseAnswer,
+  answerQuest, welcome, questionGame, brainFalseAnswer,
 } from '../index.js';
 
 const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -24,9 +24,9 @@ const isPrimeNumber = () => {
   questionGame(question);
   for (let x = 0; x < 3; x += 1) {
     const randomPrime = Math.floor(Math.random() * 100 + 1);
-    evenQuest(randomPrime);
+    answerQuest(randomPrime);
     const answer = askQuestion();
-    evenQuest(randomPrime);
+    answerQuest(randomPrime);
     if (answer === isPrime(randomPrime)) {
       isCorrect();
       count += 1;

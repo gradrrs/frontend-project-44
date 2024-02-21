@@ -1,5 +1,5 @@
 import {
-  askQuestion, isCorrect, congratulation, questionGame, tryAgain, evenQuest, welcome,
+  askQuestion, isCorrect, congratulation, questionGame, tryAgain, answerQuest, welcome,
 } from '../index.js';
 
 const question = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -10,8 +10,7 @@ const isEven = () => {
   questionGame(question);
   for (let i = 0; i < 3; i += 1) {
     const x = String(Math.random())[2];
-    evenQuest(x);
-    console.log(x);
+    answerQuest(x);
     const input = askQuestion();
     if ((x % 2 === 0 && input === 'yes') || (x % 2 !== 0 && input === 'no')) {
       isCorrect();

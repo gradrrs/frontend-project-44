@@ -1,6 +1,6 @@
 import {
   congratulation, askQuestion, isCorrect, tryAgain,
-  welcome, questionGame, evenQuest, brainFalseAnswer,
+  welcome, questionGame, answerQuest, brainFalseAnswer,
 } from '../index.js';
 
 const getRandomInt = () => Math.floor(Math.random() * 3);
@@ -23,15 +23,15 @@ const calculate = () => {
     if (massive[operator] === '+') {
       result = number1 + number2;
       const str = `${number1} ${massive[operator]} ${number2}`;
-      evenQuest(str);
+      answerQuest(str);
     } else if (massive[operator] === '-') {
       result = number1 - number2;
       const str = `${number1} ${massive[operator]} ${number2}`;
-      evenQuest(str);
+      answerQuest(str);
     } else {
       result = number1 * number2;
       const str = `${number1} ${massive[operator]} ${number2}`;
-      evenQuest(str);
+      answerQuest(str);
     }
     const calculation = askQuestion(question);
     if (Math.abs(calculation) === Math.abs(result)) {

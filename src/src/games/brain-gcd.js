@@ -1,6 +1,6 @@
 import {
   askQuestion, isCorrect, congratulation, tryAgain,
-  questionGame, welcome, brainFalseAnswer, evenQuest,
+  questionGame, welcome, brainFalseAnswer, answerQuest,
 } from '../index.js';
 
 welcome();
@@ -18,7 +18,7 @@ const nod = () => {
       }
     }
     const str = `${x1} ${x2}`;
-    evenQuest(str);
+    answerQuest(str);
     const UserInput = askQuestion();
     if (Math.abs(UserInput) === Math.abs(target)) {
       isCorrect();

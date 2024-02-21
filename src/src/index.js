@@ -18,7 +18,7 @@ const congratulation = () => {
   console.log(`Congratulations, ${importName}!`);
 };
 
-export const questionGame = (question) => {
+const questionGame = (question) => {
   console.log(question);
 };
 
@@ -30,12 +30,12 @@ const brainFalseAnswer = (calculation, result) => {
   console.log(`'${calculation}' is wrong answer ;(. Correct answer was '${result}'.`);
 };
 
-const evenQuest = (x) => {
+const answerQuest = (x) => {
   console.log(`Question: ${x}`);
 };
 
 export {
   isCorrect, askQuestion, congratulation,
-  evenQuest, welcome,
-  brainFalseAnswer, tryAgain,
+  answerQuest, welcome,
+  brainFalseAnswer, tryAgain, questionGame
 };

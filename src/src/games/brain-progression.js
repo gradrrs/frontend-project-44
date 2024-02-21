@@ -1,5 +1,5 @@
 import {
-  askQuestion, congratulation, evenQuest, isCorrect, tryAgain,
+  askQuestion, congratulation, answerQuest, isCorrect, tryAgain,
   welcome, questionGame, brainFalseAnswer,
 } from '../index.js';
 
@@ -24,7 +24,7 @@ const progressionNumber = () => {
       }
       StartValue += step;
     }
-    evenQuest(massive.join(' '));
+    answerQuest(massive.join(' '));
     const answer = askQuestion();
     if (Math.abs(QuestNumber) === Math.abs(answer)) {
       isCorrect();
